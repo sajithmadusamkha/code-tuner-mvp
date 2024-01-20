@@ -24,7 +24,7 @@ export default function Home() {
         </Form.Group>
 
         <Form.Group as={Col} className="mb-3 col-6 position-absolute bottom-0 end-0" controlId="exampleForm.ControlTextarea1">
-          <Form.Control as="textarea" rows={8} className="custom-textarea"/>
+          <Form.Control as="textarea" rows={8} className="custom-textarea" placeholder="Error / Explain"/>
         </Form.Group>
         </Row>
       </Form>
