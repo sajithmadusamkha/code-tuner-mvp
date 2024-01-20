@@ -21,6 +21,7 @@ body {
 
 .custom-textarea {
     background-color: #464646;
+    resize: none;
 }
 
 .custom-textarea:focus {

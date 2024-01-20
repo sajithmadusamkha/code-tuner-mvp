@@ -22,7 +22,7 @@ export default function Home() {
           >
             <Form.Control
               as="textarea"
-              rows={22}
+              rows={18}
               className="custom-textarea"
               placeholder="Start typing your code here..."
             />
@@ -33,7 +33,12 @@ export default function Home() {
             className="mb-3 col-6"
             controlId="exampleForm.ControlTextarea1"
           >
-            <Form.Control as="textarea" rows={18} className="custom-textarea" />
+            <Form.Control
+              as="textarea"
+              rows={18}
+              className="custom-textarea"
+              readOnly
+            />
           </Form.Group>
 
           <Form.Group
@@ -46,6 +51,7 @@ export default function Home() {
               rows={8}
               className="custom-textarea"
               placeholder="Error / Explain"
+              readOnly
             />
           </Form.Group>
         </Row>
