@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,500&display=swap');
 
-* {
+body {
     background-color: #262626;
     font-family: 'IBM Plex Mono', monospace;
 }
@@ -16,4 +16,18 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 1.625rem;
+    margin-top: 0.5rem;
+}
+
+.custom-textarea {
+    background-color: #464646;
+}
+
+.custom-textarea:focus {
+    background-color: #464646;
+    color: white;
+}
+
+.custom-textarea::placeholder {
+    color: white;
 }
