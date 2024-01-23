@@ -21,6 +21,7 @@ body {
 
 .custom-textarea {
     background-color: #464646;
+    color: white;
     resize: none;
 }
 

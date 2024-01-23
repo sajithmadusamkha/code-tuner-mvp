@@ -1,7 +1,20 @@
-import React from "react";
+import axios from "../axios";
+import React, { useEffect, useState } from "react";
 import { Button, Col, Form, Row } from "react-bootstrap";
 
 export default function Home() {
+  const [responseData, setResponseData] = useState(null);
+
+  const handleClick = async () => {
+    try {
+      const response = await axios.get('/get-optimize-code');
+      setResponseData(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+
   return (
     <div>
       <div className="top-bar">
@@ -37,6 +50,7 @@ export default function Home() {
               as="textarea"
               rows={18}
               className="custom-textarea"
+              value={responseData?.message || ''}
               readOnly
             />
           </Form.Group>
@@ -58,6 +72,7 @@ export default function Home() {
         <Button
           variant="success"
           style={{ marginLeft: "0.7rem", width: "5rem" }}
+          onClick={handleClick}
         >
           Run
         </Button>
